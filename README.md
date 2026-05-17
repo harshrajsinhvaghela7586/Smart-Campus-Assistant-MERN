@@ -256,9 +256,9 @@ Recommended deployment setup:
 
 Live links can be added here after deployment:
 
-    Frontend Live Demo: (https://smart-campus-assistant-eight.vercel.app/)
-    Backend API: https://smart-campus-assistant-ynfo.onrender.com
-
+    Frontend Live Demo: [Open Live Demo](https://smart-campus-assistant-eight.vercel.app/)
+    Backend API: [Open Backend API](https://smart-campus-assistant-ynfo.onrender.com)
+    
 ---
 
 ## Demo Safety Notes
