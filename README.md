@@ -39,29 +39,6 @@ This project was originally created as an academic project and has been prepared
 
 ![Login Page](screenshots/login.png)
 
-### Admin Dashboard
-
-![Admin Dashboard](screenshots/admin-dashboard.png)
-
-### Faculty Dashboard
-
-![Faculty Dashboard](screenshots/faculty-dashboard.png)
-
-### Student Dashboard
-
-![Student Dashboard](screenshots/student-dashboard.png)
-
-### Timetable Page
-
-![Timetable Page](screenshots/timetable.png)
-
-### Attendance Page
-
-![Attendance Page](screenshots/attendance.png)
-
-### Result Page
-
-![Result Page](screenshots/result.png)
 
 ---
 
