@@ -238,8 +238,8 @@ This project was originally created as an academic project and has been prepared
 
 Recommended demo accounts:
 
-    Student:
-    Email: student@smartcampus.com
+    Name: Student
+    Email: student@campus.com
     Password: Abcd@1234
 
 Note: These credentials are only for demo deployment with sample data.
