@@ -31,13 +31,23 @@
   const app = express();
 
 
-  app.use(cors({
-    origin: "http://localhost:5173",
-    credentials: true, // 🔥 VERY IMPORTANT
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  }));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://smart-campus-assistant-eight.vercel.app",
+];
 
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS blocked for origin: ${origin}`));
+    }
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
   app.use(express.json());
 
