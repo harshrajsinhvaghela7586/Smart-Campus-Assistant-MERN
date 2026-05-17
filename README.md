@@ -33,11 +33,11 @@ This project was originally created as an academic project and has been prepared
 
 ### Home Page
 
-![Home Page](screenshots/homepage.png)
+![Home Page](screenshots/HomePage.png)
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/LoginPage.png)
 
 
 ---
