@@ -1,260 +1,542 @@
-# 🚀 MERN Stack Web Application (Smart Campus Assistant)
+# Smart Campus Assistant - MERN Stack
 
-![MERN](https://img.shields.io/badge/Stack-MERN-blue)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-green)
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Node](https://img.shields.io/badge/Backend-Node.js-success)
+![MERN Stack](https://img.shields.io/badge/Stack-MERN-blue)
+![React](https://img.shields.io/badge/Frontend-React.js-61DAFB)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933)
+![Express.js](https://img.shields.io/badge/API-Express.js-black)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-A Full Stack Web Application developed using the MERN Stack (MongoDB, Express.js, React.js, Node.js).  
-This project is designed as a **Smart Campus Assistant** focusing on clean UI, secure backend APIs, scalability, and real-world use cases.
+Smart Campus Assistant is a full-stack MERN web application designed to manage academic and campus-related workflows through separate role-based panels for Admin, Faculty, and Students.
 
---------------------------------------------------
+The project focuses on secure authentication, role-based access control, timetable management, attendance workflows, academic data handling, notifications, result management, and clean dashboard-based UI.
 
-## 📌 Project Overview
+---
 
-The Smart Campus Assistant helps manage and simplify campus-related operations by providing a centralized platform for users.
+## Project Overview
 
-This application allows users to:
-- Register and login securely
-- Access protected routes based on roles
-- Perform CRUD operations
-- Interact with backend through REST APIs
-- Use a responsive and user-friendly interface
-- Manage academic and campus-related data efficiently
+Smart Campus Assistant provides a centralized platform for managing campus operations digitally.
 
---------------------------------------------------
+It includes different panels for:
 
-## ✨ Key Features
+- Admin
+- Faculty / Teacher
+- Student
 
-### 🔐 Authentication & Authorization
-- User Registration & Login
-- JWT-based Authentication
-- Secure Password Hashing using Bcrypt
-- Role Based Access Control (Admin / User)
+Each role has access to specific features based on permissions. The application is built with a scalable MERN architecture and follows a clean separation between frontend, backend, routes, controllers, models, middleware, and services.
 
-### 🗂 Core Functionalities
-- CRUD Operations (Create, Read, Update, Delete)
-- Centralized Data Management
-- Protected APIs
-- Dynamic Dashboard
+This project was originally created as an academic project and has been prepared as a demo-safe MERN portfolio project using anonymized/sample data.
 
-### 🎨 Frontend Features
-- Clean and modern UI
-- Fully responsive design
+---
+
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/homepage.png)
+
+### Login Page
+
+![Login Page](screenshots/login.png)
+
+---
+
+## Key Features
+
+### Authentication & Authorization
+
+- User registration and login
+- JWT-based authentication
+- Secure password hashing using Bcrypt
+- Role-based access control
+- Protected frontend routes
+- Protected backend APIs
+- Separate access for Admin, Faculty, and Students
+
+### Admin Panel
+
+- Admin dashboard
+- Manage students
+- Manage faculty members
+- Manage subjects
+- Manage timetable data
+- Manage attendance-related records
+- Manage academic results
+- View campus-related data from a centralized dashboard
+- Upload academic data using bulk upload features
+- Control role-based access and user information
+
+### Faculty / Teacher Panel
+
+- Faculty dashboard
+- View assigned subjects
+- View timetable
+- Manage attendance for assigned lectures
+- Access student-related academic data
+- View notifications
+- Interact with academic workflows through a dedicated faculty interface
+
+### Student Panel
+
+- Student dashboard
+- View timetable
+- View attendance details
+- View subjects
+- View academic result information
+- View notifications
+- Access campus-related information through a clean student interface
+
+### Timetable Management
+
+- Structured timetable management
+- Subject-wise scheduling
+- Faculty-wise lecture allocation
+- Student-side timetable viewing
+- Faculty-side timetable viewing
+- Admin-side timetable management
+- Support for academic scheduling workflows
+
+### Attendance Management
+
+- Attendance-related workflow support
+- Faculty-side attendance handling
+- Student-side attendance viewing
+- Attendance records stored in MongoDB
+- PDF/report generation support for attendance data
+- Demo-safe data can be used for public deployment
+
+### Notification System
+
+- Role-based notification support
+- Admin-to-user communication workflow
+- Student and faculty notification views
+- Centralized notification handling
+
+### Result Management
+
+- Result management workflow
+- Student result viewing
+- Admin-side result handling
+- Academic performance data management
+- Ranking/topper-related workflow support
+
+### Bulk Upload Support
+
+- Bulk upload support for academic data
+- CSV-based data insertion workflow
+- Useful for adding users, timetable, subjects, and academic records
+- Helps quickly populate demo or academic databases
+
+### Frontend Features
+
+- Clean and responsive user interface
+- Dashboard-based layout
+- Role-based navigation
 - Reusable React components
-- Form validation & error handling
-- Fast navigation using React Router
+- Form validation
+- Error handling
+- Fast routing using React Router
+- API integration using Axios
 
-### 🛡 Security Features
-- JWT token verification middleware
-- Encrypted passwords
-- Environment variables for sensitive data
-- Secure API access
+### Security Features
 
---------------------------------------------------
+- JWT authentication
+- Password hashing with Bcrypt
+- Protected routes
+- Middleware-based API protection
+- Role-based authorization
+- Environment variables for sensitive configuration
+- Demo mode support for safe public deployment
 
-## 🎨 UI & Design
+---
 
-- Minimal and modern interface
-- Responsive for desktop, tablet, and mobile devices
-- Simple navigation and user-friendly layout
-
-Screens included:
-- Home Page
-- Login Page
-- Registration Page
-- Dashboard
-- Admin Panel / User Panel
-
---------------------------------------------------
-
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
+
 - React.js
 - React Router DOM
 - Axios
-- CSS / Bootstrap / Tailwind
-- Vite (for fast development)
+- JavaScript
+- CSS / Tailwind CSS / Bootstrap
+- Vite
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-- JWT Authentication
+- JWT
 - Bcrypt.js
+- Multer / File Upload Support
 - dotenv
 
---------------------------------------------------
-## 📁 Project Structure
+### Integrations / Services
 
-```
-MERN-Smart-Campus-Assistant/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── context/
-│   │   └── App.js
-│   └── package.json
-│
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── config/
-│   └── server.js
-│
-├── .env
-├── package.json
-└── README.md
-```
+- Cloudinary support for file or image uploads
+- Email service support
+- SMS service support
+- PDF/report generation support
 
+### Tools
 
---------------------------------------------------
+- Git
+- GitHub
+- Postman
+- VS Code
+- MongoDB Atlas
+- Vercel
+- Render
 
-## ⚙️ Installation & Setup
+---
 
-### Step 1: Clone Repository
+## Project Structure
 
-git clone https://github.com/harshrajsinhvaghela7586/Smart-Campus-Assistant-MERN.git  
-cd MERN-Smart-Campus-Assistant
+    Smart-Campus-Assistant-MERN/
+    |
+    |-- frontend/
+    |   |-- src/
+    |   |   |-- components/
+    |   |   |-- pages/
+    |   |   |-- services/
+    |   |   |-- context/
+    |   |   |-- assets/
+    |   |   `-- App.jsx
+    |   |
+    |   |-- public/
+    |   |-- package.json
+    |   `-- vite.config.js
+    |
+    |-- backend/
+    |   |-- config/
+    |   |-- controllers/
+    |   |-- middleware/
+    |   |-- models/
+    |   |-- routes/
+    |   |-- services/
+    |   |-- utils/
+    |   |-- server.js
+    |   `-- package.json
+    |
+    |-- .gitignore
+    |-- README.md
+    `-- package.json
 
---------------------------------------------------
+---
 
-### Step 2: Backend Setup
+## Installation & Setup
 
-cd backend  
-npm install  
-npm run dev  
+### 1. Clone the Repository
 
-Create a `.env` file inside backend folder:
+    git clone https://github.com/harshrajsinhvaghela7586/Smart-Campus-Assistant-MERN.git
+    cd Smart-Campus-Assistant-MERN
 
-PORT=5000
-MONGO_URI=your_demo_mongodb_uri
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-EMAIL_USER=your_email
-EMAIL_PASS=your_email_app_password
-SMS_ENABLED=false
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_token
-TWILIO_PHONE=your_twilio_phone
-FRONTEND_URL=your_frontend_url
+---
 
-Backend runs on:  
-http://localhost:5000
+## Backend Setup
 
---------------------------------------------------
+Go to the backend folder:
 
-### Step 3: Frontend Setup
+    cd backend
+    npm install
 
-cd frontend  
-npm install  
-npm run dev  
+Create a .env file inside the backend folder:
 
-Frontend runs on:  
-http://localhost:5173
+    PORT=5000
+    NODE_ENV=development
 
---------------------------------------------------
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
 
-## 📜 Available Scripts
+    FRONTEND_URL=http://localhost:5173
+
+    DEMO_MODE=false
+    SMS_ENABLED=false
+    EMAIL_ENABLED=false
+    UPLOAD_ENABLED=false
+
+    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+    CLOUDINARY_API_KEY=your_cloudinary_api_key
+    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+    EMAIL_USER=your_email_address
+    EMAIL_PASS=your_email_app_password
+
+    TWILIO_ACCOUNT_SID=your_twilio_account_sid
+    TWILIO_AUTH_TOKEN=your_twilio_auth_token
+    TWILIO_PHONE=your_twilio_phone_number
+
+Start the backend server:
+
+    npm run dev
+
+Backend will run on:
+
+    http://localhost:5000
+
+---
+
+## Frontend Setup
+
+Open a new terminal and go to the frontend folder:
+
+    cd frontend
+    npm install
+
+Create a .env file inside the frontend folder:
+
+    VITE_API_BASE_URL=http://localhost:5000/api
+
+Start the frontend:
+
+    npm run dev
+
+Frontend will run on:
+
+    http://localhost:5173
+
+---
+
+## Available Scripts
 
 ### Backend
-- npm run dev → Run backend using nodemon
-- npm start → Run backend normally
+
+    npm run dev
+
+Runs the backend server using nodemon.
+
+    npm start
+
+Runs the backend server normally.
 
 ### Frontend
-- npm run dev → Start development server
-- npm run build → Build production-ready frontend
 
---------------------------------------------------
+    npm run dev
 
-## 🔐 API Endpoints
+Starts the Vite development server.
 
-Authentication:
-POST    /api/auth/register   → User Registration  
-POST    /api/auth/login      → User Login  
+    npm run build
 
-Users:
-GET     /api/users           → Get All Users  
+Builds the frontend for production.
 
-Data Management:
-POST    /api/data            → Create Data  
-GET     /api/data            → Get Data  
-PUT     /api/data/:id        → Update Data  
-DELETE  /api/data/:id        → Delete Data  
+    npm run preview
 
---------------------------------------------------
+Previews the production build locally.
 
-## 🧪 Testing
+---
 
-- APIs tested using Postman
-- Frontend tested on modern browsers
-- Authentication and protected routes verified
-- Error handling tested for invalid requests
+## Demo Mode
 
---------------------------------------------------
+For public portfolio deployment, this project can be configured in demo mode.
 
-## 🚀 Future Enhancements
+Recommended demo environment:
 
-- Email Verification
-- Forgot Password functionality
-- Notification System
-- Advanced Admin Dashboard
-- Deployment on Render / Vercel
-- Role-based Analytics
-- UI Animations and Dark Mode
-- Mobile App Integration
+    NODE_ENV=production
+    DEMO_MODE=true
+    SMS_ENABLED=false
+    EMAIL_ENABLED=false
+    UPLOAD_ENABLED=false
 
---------------------------------------------------
+In demo mode, sensitive actions such as real SMS, real email sending, and real file uploads can be disabled.
 
-## 🌐 Deployment (Planned)
+This helps keep the deployed project safe for public viewing while still allowing recruiters or reviewers to explore the main Admin, Faculty, and Student workflows.
 
-Frontend:
-- Vercel / Netlify
+---
 
-Backend:
-- Render / Railway
+## Demo Data Recommendation
 
-Database:
-- MongoDB Atlas
+For public deployment, use only demo-safe data such as:
 
---------------------------------------------------
+    Demo Admin
+    Prof. Demo Faculty
+    Prof. Sample Teacher
+    Student Demo One
+    Student Demo Two
+    Smart Campus Institute
+    Room A-101
+    Lab B-201
+    DEMO2026001
+    DEMO2026002
 
-## 🤝 Contribution
+Avoid using:
 
-Contributions are welcome.
-Steps:
-1. Fork the repository
-2. Create a new branch
-3. Commit changes
-4. Push to your fork
-5. Create a Pull Request
+    Real student names
+    Real faculty names
+    Real college data
+    Real enrollment numbers
+    Real attendance records
+    Real timetable data
+    Private documents
+    College PPT or documentation files
 
---------------------------------------------------
+---
 
-## 👨‍💻 Developer Details
+## Demo Credentials
 
-Name: Harshrajsinh Vaghela  
-Project Type: MERN Stack Web Application  
-Project Name: Smart Campus Assistant  
-Purpose: Academic / Learning Project  
+You can create demo users manually or through the application.
 
---------------------------------------------------
+Recommended demo accounts:
 
-## 📜 License
+    Admin:
+    Email: admin.demo@smartcampus.com
+    Password: Admin@123
 
-This project is developed for educational purposes only.
+    Faculty:
+    Email: faculty.demo@smartcampus.com
+    Password: Faculty@123
 
---------------------------------------------------
+    Student:
+    Email: student.demo@smartcampus.com
+    Password: Student@123
 
-⭐ Thank you for checking out this project!
+Note: These credentials are only recommended for demo deployment with sample data. Do not use them in a real production environment.
 
+---
+
+## Deployment
+
+Recommended deployment setup:
+
+    Frontend: Vercel
+    Backend: Render
+    Database: MongoDB Atlas
+
+### Backend Deployment on Render
+
+Render settings:
+
+    Root Directory: backend
+    Build Command: npm install
+    Start Command: npm start
+
+Required environment variables on Render:
+
+    NODE_ENV=production
+    PORT=5000
+    MONGO_URI=your_demo_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    FRONTEND_URL=https://your-frontend-domain.vercel.app
+    DEMO_MODE=true
+    SMS_ENABLED=false
+    EMAIL_ENABLED=false
+    UPLOAD_ENABLED=false
+
+### Frontend Deployment on Vercel
+
+Vercel settings:
+
+    Root Directory: frontend
+    Framework Preset: Vite
+    Build Command: npm run build
+    Output Directory: dist
+    Install Command: npm install
+
+Required environment variable on Vercel:
+
+    VITE_API_BASE_URL=https://your-backend-domain.onrender.com/api
+
+---
+
+## API Overview
+
+Common API modules include:
+
+    Authentication APIs
+    User Management APIs
+    Student APIs
+    Faculty APIs
+    Subject APIs
+    Timetable APIs
+    Attendance APIs
+    Notification APIs
+    Result APIs
+    Upload APIs
+
+Example authentication routes:
+
+    POST /api/auth/register
+    POST /api/auth/login
+    GET  /api/auth/me
+
+Example admin/user routes:
+
+    GET    /api/users
+    POST   /api/users
+    PUT    /api/users/:id
+    DELETE /api/users/:id
+
+Exact routes may vary based on the backend implementation.
+
+---
+
+## Testing
+
+The application was tested for:
+
+- User authentication
+- Role-based access
+- Protected routes
+- Admin dashboard workflows
+- Faculty dashboard workflows
+- Student dashboard workflows
+- Timetable management
+- Attendance workflows
+- API request handling
+- Error handling
+- Responsive UI behavior
+
+APIs were tested using Postman during development.
+
+---
+
+## Future Enhancements
+
+- Advanced attendance analytics
+- Improved result ranking dashboard
+- Timetable conflict detection
+- Notification preferences
+- Audit logs for admin actions
+- More advanced reporting features
+- Mobile app integration
+- Dark mode support
+- Improved demo account switching
+
+---
+
+## Security Notes
+
+- .env files are not included in the repository.
+- Sensitive credentials must be stored only in deployment dashboards such as Render and Vercel.
+- Real academic data should not be used in public deployments.
+- Demo deployment should use anonymized sample data.
+- Private documents, PPT files, PDFs, and college-related documentation should not be committed to GitHub.
+
+---
+
+## Developer
+
+    Name: Harshrajsinh Vaghela
+    Role: MERN Stack Developer
+    Project: Smart Campus Assistant - MERN Stack
+    Location: Ahmedabad, Gujarat, India
+
+GitHub: [harshrajsinhvaghela7586](https://github.com/harshrajsinhvaghela7586)
+
+Portfolio: [Harshrajsinh Vaghela Portfolio](https://portfolio-seven-beige-78.vercel.app/)
+
+LinkedIn: [Harshrajsinh Vaghela](https://www.linkedin.com/in/harshrajsinh-vaghela-a38bba300/)
+
+---
+
+## License
+
+This project is developed for academic learning and portfolio demonstration purposes.
+
+---
+
+## Acknowledgement
+
+Thank you for checking out this project.
+
+If you found this project useful or interesting, feel free to star the repository.
