@@ -13,6 +13,14 @@ The project focuses on secure authentication, role-based access control, timetab
 
 ---
 
+# Live links 
+
+Frontend Live Demo: https://smart-campus-assistant-eight.vercel.app
+
+Backend API: https://smart-campus-assistant-ynfo.onrender.com
+
+---
+
 ## Project Overview
 
 Smart Campus Assistant provides a centralized platform for managing campus operations digitally.
@@ -254,11 +262,6 @@ Recommended deployment setup:
     Backend: Render
     Database: MongoDB Atlas
 
-Live links can be added here after deployment:
-
-    Frontend Live Demo: [Open Live Demo](https://smart-campus-assistant-eight.vercel.app/)
-    Backend API: [Open Backend API](https://smart-campus-assistant-ynfo.onrender.com)
-    
 ---
 
 ## Demo Safety Notes
