@@ -122,7 +122,7 @@ MERN-Smart-Campus-Assistant/
 
 ### Step 1: Clone Repository
 
-git clone https://github.com/harshrajsinhvaghela7586/MERN-Smart-Campus-Assistant.git  
+git clone https://github.com/harshrajsinhvaghela7586/Smart-Campus-Assistant-MERN.git  
 cd MERN-Smart-Campus-Assistant
 
 --------------------------------------------------
@@ -135,9 +135,19 @@ npm run dev
 
 Create a `.env` file inside backend folder:
 
-PORT=5000  
-MONGO_URI=your_mongodb_connection_string  
-JWT_SECRET=your_jwt_secret  
+PORT=5000
+MONGO_URI=your_demo_mongodb_uri
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+EMAIL_USER=your_email
+EMAIL_PASS=your_email_app_password
+SMS_ENABLED=false
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_token
+TWILIO_PHONE=your_twilio_phone
+FRONTEND_URL=your_frontend_url
 
 Backend runs on:  
 http://localhost:5000
