@@ -13,11 +13,10 @@ The project focuses on secure authentication, role-based access control, timetab
 
 ---
 
-# Live links 
+## Live Links
 
-Frontend Live Demo: https://smart-campus-assistant-eight.vercel.app
 
-Backend API: https://smart-campus-assistant-ynfo.onrender.com
+- Project Live Link : [Open Smart Campus Assistant](https://smart-campus-assistant-eight.vercel.app)
 
 ---
 
