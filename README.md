@@ -127,14 +127,6 @@ This project was originally created as an academic project and has been prepared
 - Student and faculty notification views
 - Centralized notification handling
 
-### Result Management
-
-- Result management workflow
-- Student result viewing
-- Admin-side result handling
-- Academic performance data management
-- Ranking/topper-related workflow support
-
 ### Bulk Upload Support
 
 - Bulk upload support for academic data
